@@ -8,7 +8,7 @@ import { Image } from "astro:assets";
 
 export const getStaticPaths = async () => {
   const posts = await getCollection("posts");
-  const paths = posts.map((post: { slug: any }) => ({
+  const paths = posts.map((post) => ({
     params: { slug: post.slug },
     props: { post },
   }));

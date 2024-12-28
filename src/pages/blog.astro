@@ -11,6 +11,6 @@ const posts = await getCollection("posts");
 <Layout title="Blog | Rythm Nation ">
   <Main>
     <H1 text="Rythm Nation Blog" />
-    {posts.map((post: any) => <PostList posts={posts} />)}
+    <PostList posts={posts} />
   </Main>
 </Layout>
